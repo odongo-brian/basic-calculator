@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <form action="" class="cal">
+                <input type="text"  name="screen" readonly = "" class="screen" id="screen" placeholder="0">
+                <div class="maingrid">
+                    <div class="operators">
+                        <button type="button" class=" btn operator divide " onclick="op('/')">&divide;</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn operator multiply" onclick="op('*')">&times;</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn operator delete" onclick="del()">DEL</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn operator clear" onclick="clearscreen()">AC</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class=" btn val" id="seven" onclick = "display('7')">7</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn val" id="eight" onclick="display('8')">8</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn val" id="nine" onclick="display('9')">9</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn operator minus" id="subtract">&minus;</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class=" btn val" id="four" onclick="display('4')">4</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn val " id="five" onclick="display('5')">5</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn val" id="six" onclick="display('6')">6</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn operator" id="add">&plus;</button>
+
+                    </div>
+                    <div class="operators">
+                        <button type="button" class=" btn val" id = 'one' onclick="display('1')" >1</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn val" id = 'two' onclick="display('2')" >2</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn val" id = 'three' onclick="display('3')" >3</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn operator " id="equals">&equals;</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn val" id="zero" onclick="display('0')">0</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn val " id="dot">&dot;</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class=" btn val " id="double_zero" onclick="display('00')">00</button>
+                    </div>
+                    <div class="operators">
+                        <button type="button" class="btn operator" id = 'square_root' onclick="compute()">&Sqrt;</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="style.js"></script>
+</body>
+</html>
